@@ -1,4 +1,4 @@
-import provinces from "./provinces.json";
+import provinces from "../data/provinces.json";
 
 export default function handler(req, res) {
   res.setHeader("Access-Control-Allow-Origin", "*");
