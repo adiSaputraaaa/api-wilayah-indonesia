@@ -16,7 +16,7 @@ function getCurrentUrl() {
 const el = new Vue({
   el: "#app",
   data: {
-    baseApiUrl: getCurrentUrl() + "data",
+    baseApiUrl: getCurrentUrl() + "/data",
     provinces: [],
     regencies: [],
     districts: [],
