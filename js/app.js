@@ -137,7 +137,7 @@ const el = new Vue({
   methods: {
     async fetchProvinces() {
       this.fetchingProvinces = true;
-      const result = await fetch(`/provinces.json`);
+      const result = await fetch(`data/provinces.json`);
       this.fetchingProvinces = false;
       this.provinces = await result.json();
     },
@@ -147,7 +147,7 @@ const el = new Vue({
         return;
       }
       this.fetchingRegencies = true;
-      const result = await fetch(`/regencies/${this.provinceId}.json`);
+      const result = await fetch(`data/regencies/${this.provinceId}.json`);
       this.fetchingRegencies = false;
       this.regencies = await result.json();
     },
@@ -158,7 +158,7 @@ const el = new Vue({
       }
 
       this.fetchingDistricts = true;
-      const result = await fetch(`/districts/${this.regencyId}.json`);
+      const result = await fetch(`data/districts/${this.regencyId}.json`);
       this.fetchingDistricts = false;
       this.districts = await result.json();
     },
@@ -169,7 +169,7 @@ const el = new Vue({
       }
 
       this.fetchingVillages = true;
-      const result = await fetch(`/villages/${this.districtId}.json`);
+      const result = await fetch(`data/villages/${this.districtId}.json`);
       this.fetchingVillages = false;
       this.villages = await result.json();
     },
