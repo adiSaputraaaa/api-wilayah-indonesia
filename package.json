@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "@types/node": "^22.15.24"
+  },
+  "dependencies": {
+    "h3": "^1.15.3"
   }
 }
